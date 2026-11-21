@@ -1,0 +1,116 @@
+{
+ "passes_total": 42,
+ "passes_dev": 8,
+ "passes_eval": 16,
+ "passes_winter": 18,
+ "seasons": {
+  "summer": {
+   "passes": 16,
+   "ais_ships": 561,
+   "detections": 740,
+   "detection_overall": {
+    "n": 561,
+    "rate": 0.6381461675579323,
+    "lo": 0.5848375451263538,
+    "hi": 0.6879457207124157
+   },
+   "unmatched_overall": {
+    "n": 740,
+    "rate": 0.4635135135135135,
+    "lo": 0.4338420222238422,
+    "hi": 0.49341190112321126
+   },
+   "missing_sea_state": {
+    "ais": {
+     "rows": 561,
+     "no_wave": 0,
+     "no_wind": 0
+    },
+    "detections": {
+     "rows": 740,
+     "no_wave": 2,
+     "no_wind": 2
+    }
+   }
+  },
+  "winter": {
+   "passes": 18,
+   "ais_ships": 486,
+   "detections": 730,
+   "detection_overall": {
+    "n": 486,
+    "rate": 0.7469135802469136,
+    "lo": 0.7037821550852167,
+    "hi": 0.7946846011935179
+   },
+   "unmatched_overall": {
+    "n": 730,
+    "rate": 0.4684931506849315,
+    "lo": 0.44124813298824495,
+    "hi": 0.49678392045648684
+   },
+   "missing_sea_state": {
+    "ais": {
+     "rows": 486,
+     "no_wave": 0,
+     "no_wind": 0
+    },
+    "detections": {
+     "rows": 730,
+     "no_wave": 0,
+     "no_wind": 0
+    }
+   }
+  },
+  "both": {
+   "passes": 34,
+   "ais_ships": 1047,
+   "detections": 1470,
+   "detection_overall": {
+    "n": 1047,
+    "rate": 0.6886341929321872,
+    "lo": 0.6522622436272143,
+    "hi": 0.7242822922424913
+   },
+   "unmatched_overall": {
+    "n": 1470,
+    "rate": 0.46598639455782315,
+    "lo": 0.44619602467443453,
+    "hi": 0.48697524790099156
+   },
+   "missing_sea_state": {
+    "ais": {
+     "rows": 1047,
+     "no_wave": 0,
+     "no_wind": 0
+    },
+    "detections": {
+     "rows": 1470,
+     "no_wave": 2,
+     "no_wind": 2
+    }
+   }
+  }
+ },
+ "cloud_blindness": {
+  "days": 40,
+  "blind_days": 31,
+  "share": 0.775,
+  "lo": 0.65,
+  "hi": 0.9,
+  "threshold": 0.5,
+  "mean_cloud_share": 0.7509375
+ },
+ "typical_ship": {
+  "length_m": 87.0,
+  "wind_ms": 5.0
+ },
+ "tool_range": {
+  "wave_max_m": 3.7,
+  "wind_max_ms": 15.0,
+  "length_min_m": 12,
+  "length_max_m": 252,
+  "ships_wind_over_15": 27,
+  "ships_waves_over_3": 46
+ }
+}

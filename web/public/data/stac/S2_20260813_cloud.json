@@ -1,0 +1,113 @@
+{
+ "type": "Feature",
+ "stac_version": "1.1.0",
+ "stac_extensions": [
+  "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+  "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+  "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+ ],
+ "id": "S2_20260813_cloud",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     6.119161663933367,
+     60.00260549065574
+    ],
+    [
+     5.995210766206918,
+     61.35887834184149
+    ],
+    [
+     3.794989611558027,
+     61.29229202551335
+    ],
+    [
+     4.008962561075254,
+     59.939586888721536
+    ],
+    [
+     6.119161663933367,
+     60.00260549065574
+    ]
+   ]
+  ]
+ },
+ "bbox": [
+  3.794989611558027,
+  59.939586888721536,
+  6.119161663933367,
+  61.35887834184149
+ ],
+ "properties": {
+  "proj:code": "EPSG:32632",
+  "proj:shape": [
+   2521,
+   1968
+  ],
+  "proj:transform": [
+   60.0,
+   0.0,
+   221280.0,
+   0.0,
+   -60.0,
+   6806460.0
+  ],
+  "proj:bbox": [
+   221280.0,
+   6655200.0,
+   339360.0,
+   6806460.0
+  ],
+  "eo:cloud_cover": 99.63,
+  "msp:sea_observed_share": 1.0,
+  "msp:cloud_share_over_sea": 0.9963,
+  "constellation": "sentinel-2",
+  "instruments": [
+   "msi"
+  ],
+  "license": "proprietary",
+  "msp:attribution": "Contains modified Copernicus Sentinel data 2025 and 2026",
+  "datetime": "2026-08-13T11:06:21Z"
+ },
+ "links": [
+  {
+   "rel": "root",
+   "href": "../../catalog.json",
+   "type": "application/json",
+   "title": "Maritime satellite pipeline catalogue"
+  },
+  {
+   "rel": "collection",
+   "href": "../collection.json",
+   "type": "application/json",
+   "title": "Sentinel-2 cloud cover over sea"
+  },
+  {
+   "rel": "parent",
+   "href": "../collection.json",
+   "type": "application/json",
+   "title": "Sentinel-2 cloud cover over sea"
+  }
+ ],
+ "assets": {
+  "data": {
+   "href": "../../../data/products/s2/S2_20260813_cloudmask.tif",
+   "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+   "title": "S2_20260813_cloudmask.tif",
+   "raster:bands": [
+    {
+     "nodata": 255.0,
+     "data_type": "uint8",
+     "name": "cloud",
+     "description": "1 cloud, 0 clear, 255 not observed"
+    }
+   ],
+   "roles": [
+    "data"
+   ]
+  }
+ },
+ "collection": "sentinel-2-cloud"
+}

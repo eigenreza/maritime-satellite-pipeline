@@ -1,0 +1,13 @@
+{
+ "items": 269,
+ "collections": [
+  "metocean",
+  "reference-layers",
+  "sentinel-1-sigma0",
+  "sentinel-2-cloud",
+  "sentinel-3-sst",
+  "ship-detections"
+ ],
+ "valid": 276,
+ "invalid": 0
+}

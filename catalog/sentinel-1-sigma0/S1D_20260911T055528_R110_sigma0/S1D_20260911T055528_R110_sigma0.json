@@ -1,0 +1,147 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json"
+  ],
+  "id": "S1D_20260911T055528_R110_sigma0",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          6.552450828806557,
+          59.84481933205841
+        ],
+        [
+          6.430689032339262,
+          61.411576033907124
+        ],
+        [
+          3.814042992165956,
+          61.33686334539755
+        ],
+        [
+          4.05886818420862,
+          59.77470569263223
+        ],
+        [
+          6.552450828806557,
+          59.84481933205841
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    3.814042992165956,
+    59.77470569263223,
+    6.552450828806557,
+    61.411576033907124
+  ],
+  "properties": {
+    "start_datetime": "2026-09-11T05:55:28.098535Z",
+    "end_datetime": "2026-09-11T05:55:53.097927Z",
+    "proj:code": "EPSG:32632",
+    "proj:shape": [
+      8734,
+      7008
+    ],
+    "proj:transform": [
+      20.00142694063927,
+      0.0,
+      222693.19623558136,
+      0.0,
+      -19.998855049232883,
+      6811332.549407758
+    ],
+    "proj:bbox": [
+      222693.19623558136,
+      6636662.549407758,
+      362863.19623558136,
+      6811332.549407758
+    ],
+    "platform": "sentinel-1d",
+    "constellation": "sentinel-1",
+    "instruments": [
+      "c-sar"
+    ],
+    "sar:instrument_mode": "IW",
+    "sar:frequency_band": "C",
+    "sar:polarizations": [
+      "VV",
+      "VH"
+    ],
+    "sar:product_type": "GRD",
+    "sar:center_frequency": 5.405,
+    "sar:resolution_range": 20.0,
+    "sar:resolution_azimuth": 22.0,
+    "sar:pixel_spacing_range": 10.0,
+    "sar:pixel_spacing_azimuth": 10.0,
+    "sar:looks_range": 5,
+    "sar:looks_azimuth": 1,
+    "sat:relative_orbit": 110,
+    "sat:orbit_state": "descending",
+    "processing:level": "L2",
+    "processing:software": {
+      "ESA SNAP": "14.0",
+      "maritime-satellite-pipeline": "1.0.0"
+    },
+    "processing:lineage": "Sentinel-1 IW GRD SAFE; precise orbit, thermal noise removal, sigma0 calibration, subset and terrain correction (Copernicus 30 m DEM) with the SNAP graph s1_grd_sigma0.xml; averaged to 20 m and stored in dB.",
+    "license": "proprietary",
+    "msp:attribution": "Contains modified Copernicus Sentinel data 2025 and 2026",
+    "datetime": "2026-09-11T05:55:28.098535Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Maritime satellite pipeline catalogue"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Sentinel-1 calibrated radar backscatter"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Sentinel-1 calibrated radar backscatter"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "../../../data/products/s1/S1D_20260911T055528_R110_sigma0_db.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "S1D_20260911T055528_R110_sigma0_db.tif",
+      "raster:bands": [
+        {
+          "nodata": -32768.0,
+          "data_type": "int16",
+          "unit": "dB",
+          "scale": 0.01,
+          "offset": 0.0,
+          "name": "VV"
+        },
+        {
+          "nodata": -32768.0,
+          "data_type": "int16",
+          "unit": "dB",
+          "scale": 0.01,
+          "offset": 0.0,
+          "name": "VH"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "sentinel-1-sigma0"
+}

@@ -1,0 +1,97 @@
+# Pipeline configuration. Values marked "frozen" were fixed on the development passes
+# before any evaluation result existed (see docs/evaluation.md).
+
+area:
+  name: Bergen and Fedje approaches
+  # lon_min, lat_min, lon_max, lat_max (WGS 84)
+  bbox: [4.0, 60.0, 6.0, 61.3]
+  # Working projection for all rasters and distances: UTM zone 32N
+  crs: EPSG:32632
+  pixel_size_m: 10
+
+period:
+  start: "2026-08-05"
+  end: "2026-09-30"   # hard limit: no data after this date anywhere
+
+winter:
+  # Second study window, processed with every rule above frozen (no tuning, training or calibration
+  # on winter data). Passes are chosen by sea state before any radar is downloaded: see
+  # config/s1_passes_winter.txt and docs/evaluation.md.
+  start: "2025-12-01"
+  end: "2026-03-15"
+  min_area_coverage: 0.70
+
+sentinel1:
+  product_type: GRD
+  mode: IW
+  # Candidate search: orbits that cross the box, one scene per pass with at least this share of the box.
+  # The passes used in the study are listed in config/s1_passes.txt.
+  candidate_orbits: [8, 15, 88, 110, 117]
+  min_area_coverage: 0.65
+  processing: snap   # snap | python (fallback)
+
+sentinel2:
+  collection: sentinel-2-l2a
+  cloud_threshold: 0.5      # a scene counts as "cloud blind" above this cloud share over sea
+  preview_resolution_m: 60
+
+sentinel3:
+  product_type: SL_2_WST___   # Copernicus Data Space; one product every second day
+  every_n_days: 2
+
+metocean:
+  # one source for both seasons: the model's daily analysis files (hourly fields)
+  waves_model: MET Norway MyWaveWAM 800 m Vestlandet (fou-hi/mywavewam800v_currhf daily files)
+  # a point takes the nearest model sea cell within this distance; farther away its sea state is missing
+  max_cell_distance_m: 2000
+  ecmwf_runs: [0, 12]
+  ecmwf_steps_h: [0, 6]
+
+ais:
+  # Positions are fetched per pass in a window around the acquisition time
+  window_minutes: 20
+
+landmask:
+  buffer_m: 250
+
+detector:
+  # CFAR on calibrated sigma0 (linear), guard and background windows in pixels (frozen)
+  channel: VV
+  guard_px: 7
+  background_px: 25
+  pfa_sigma: 5.0          # threshold in standard deviations above the local sea background
+  min_pixels: 4
+  max_length_m: 450
+  merge_distance_px: 3
+  # second stage, fixed on the development passes by `msp tune-detector` (frozen)
+  min_scr_db: 18.0
+  line_max_elongation: 4.5   # fixed by `msp line-rule` on the development passes (frozen)
+  min_peak_db: 2.0
+
+matching:
+  # frozen
+  max_distance_m: 400
+  max_time_offset_s: 600
+  exclusion_distance_m: 1500   # "not a ship" label needs no AIS ship within this distance
+
+evaluation:
+  dev_fraction: 0.3333
+  bootstrap_resamples: 2000
+  seed: 20240613
+  length_classes_m: [0, 30, 60, 100, 200, 1000]
+  wind_classes_ms: [0, 5, 10, 15, 40]
+  wave_classes_m: [0, 1, 2, 3, 15]
+
+ml:
+  chip_size: 64
+  seed: 7
+  test_fraction: 0.3333
+
+ops:
+  # Incidents injected into the replay, each by its own switch (none edits data). See docs/operations.md.
+  incidents:
+    download_timeout: "ecmwf:2026-08-20T00"   # first attempt times out, the retry succeeds
+    corrupt_file: "s3:2026-09-04"             # file truncated on arrival, caught by the quality check, quarantined, fetched again
+    ais_outage:                               # AIS service down on the replay clock, then back
+      start: "2026-09-10T00:00"
+      hours: 30

@@ -1,0 +1,61 @@
+{
+  "type": "Collection",
+  "id": "reference-layers",
+  "stac_version": "1.1.0",
+  "description": "Land mask (Shapefile) and fixed offshore structures (GeoParquet) used to keep detections at sea.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Maritime satellite pipeline catalogue"
+    },
+    {
+      "rel": "item",
+      "href": "./land_mask/land_mask.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./offshore_structures/offshore_structures.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Maritime satellite pipeline catalogue"
+    }
+  ],
+  "msp:attribution": "(c) Kartverket, CC BY 4.0",
+  "title": "Reference layers",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          4.0,
+          60.0,
+          6.0,
+          61.3
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-12-01T00:00:00Z",
+          "2026-09-30T23:59:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Reza Azad Gholami",
+      "roles": [
+        "processor"
+      ]
+    }
+  ]
+}

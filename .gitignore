@@ -1,0 +1,46 @@
+# Private notes
+_admin/
+
+# Secrets and environment
+.env
+*.env
+.env.*
+*.pem
+*.key
+*.netrc
+.netrc
+credentials*.json
+secrets*
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Node and web build
+node_modules/
+dist/
+
+# Data (raw downloads, intermediate work, caches, large products)
+/data/
+*.SAFE/
+*.zip
+
+# Local tool caches
+.prefect/
+.cache/
+.ipynb_checkpoints/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+/build/

@@ -1,0 +1,98 @@
+{
+ "type": "Feature",
+ "stac_version": "1.1.0",
+ "stac_extensions": [],
+ "id": "S1D_20260911T171027_R117_detections",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     6.0,
+     60.0
+    ],
+    [
+     6.0,
+     61.3
+    ],
+    [
+     4.0,
+     61.3
+    ],
+    [
+     4.0,
+     60.0
+    ],
+    [
+     6.0,
+     60.0
+    ]
+   ]
+  ]
+ },
+ "bbox": [
+  4.0,
+  60.0,
+  6.0,
+  61.3
+ ],
+ "properties": {
+  "msp:detections": 58,
+  "msp:fields": [
+   "pass_id",
+   "det_idx",
+   "row",
+   "col",
+   "x",
+   "y",
+   "n_pixels",
+   "fill",
+   "length_m",
+   "width_m",
+   "heading_deg",
+   "peak_vv_db",
+   "mean_vv_db",
+   "peak_vh_db",
+   "bg_vv_db",
+   "scr_db",
+   "lon",
+   "lat",
+   "ship_prob",
+   "est_length_m"
+  ],
+  "msp:attribution": "Contains modified Copernicus Sentinel data 2025 and 2026",
+  "license": "proprietary",
+  "datetime": "2026-09-11T17:10:27Z"
+ },
+ "links": [
+  {
+   "rel": "root",
+   "href": "../../catalog.json",
+   "type": "application/json",
+   "title": "Maritime satellite pipeline catalogue"
+  },
+  {
+   "rel": "collection",
+   "href": "../collection.json",
+   "type": "application/json",
+   "title": "Radar ship detections"
+  },
+  {
+   "rel": "parent",
+   "href": "../collection.json",
+   "type": "application/json",
+   "title": "Radar ship detections"
+  }
+ ],
+ "assets": {
+  "data": {
+   "href": "../../../data/products/detections/S1D_20260911T171027_R117.parquet",
+   "type": "application/vnd.apache.parquet",
+   "title": "S1D_20260911T171027_R117.parquet",
+   "roles": [
+    "data"
+   ]
+  }
+ },
+ "collection": "ship-detections"
+}

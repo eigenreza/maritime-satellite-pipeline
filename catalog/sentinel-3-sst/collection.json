@@ -1,0 +1,196 @@
+{
+  "type": "Collection",
+  "id": "sentinel-3-sst",
+  "stac_version": "1.1.0",
+  "description": "Sentinel-3 SLSTR L2 sea surface temperature cropped to the study area, CF NetCDF with a cloud-optimized GeoTIFF preview.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Maritime satellite pipeline catalogue"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260805/S3_SST_20260805.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260807/S3_SST_20260807.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260809/S3_SST_20260809.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260811/S3_SST_20260811.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260813/S3_SST_20260813.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260815/S3_SST_20260815.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260817/S3_SST_20260817.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260819/S3_SST_20260819.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260821/S3_SST_20260821.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260823/S3_SST_20260823.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260825/S3_SST_20260825.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260827/S3_SST_20260827.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260829/S3_SST_20260829.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260831/S3_SST_20260831.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260902/S3_SST_20260902.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260904/S3_SST_20260904.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260906/S3_SST_20260906.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260908/S3_SST_20260908.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260910/S3_SST_20260910.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260912/S3_SST_20260912.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260914/S3_SST_20260914.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260916/S3_SST_20260916.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260918/S3_SST_20260918.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260920/S3_SST_20260920.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260922/S3_SST_20260922.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260924/S3_SST_20260924.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260926/S3_SST_20260926.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260928/S3_SST_20260928.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S3_SST_20260930/S3_SST_20260930.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Maritime satellite pipeline catalogue"
+    }
+  ],
+  "msp:attribution": "Contains modified Copernicus Sentinel data 2025 and 2026",
+  "title": "Sentinel-3 sea surface temperature",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          4.0,
+          60.0,
+          6.0,
+          61.3
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-12-01T00:00:00Z",
+          "2026-09-30T23:59:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Reza Azad Gholami",
+      "roles": [
+        "processor"
+      ]
+    }
+  ]
+}

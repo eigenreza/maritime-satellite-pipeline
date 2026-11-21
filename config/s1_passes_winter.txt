@@ -1,0 +1,25 @@
+# Winter passes (second held-out test set). Chosen by sea state before any winter radar was downloaded.
+# Rule: src/msp/pipeline/winter.py and docs/evaluation.md. Candidates: every IW GRD scene from
+# 1 Dec 2025 to 15 Mar 2026 covering at least 70% of the box; sea state over open sea (wave-model
+# cells at least 3 km from land) at the pass time; strata by median waves and wind; 6 stormiest,
+# 6 moderate spread over wave height, the rest calm spread over time.
+# Candidates 45: stormy 7, moderate 13, calm 25. None dropped for missing AIS.
+# Format: pass id   # stratum, median and max waves (m), median and max wind (m/s)
+S1C_20251201T060327_R008   # calm, waves 1.9 / 2.5, wind 6.6 / 8.0
+S1A_20251207T060414_R008   # moderate, waves 2.1 / 2.6, wind 4.6 / 8.2
+S1C_20251213T060326_R008   # moderate, waves 2.5 / 3.2, wind 8.1 / 10.5
+S1C_20251213T171812_R015   # moderate, waves 3.5 / 4.5, wind 14.2 / 15.9
+S1A_20251219T060413_R008   # stormy, waves 4.5 / 5.1, wind 17.2 / 18.7
+S1A_20251219T171915_R015   # stormy, waves 4.8 / 5.2, wind 12.9 / 15.5
+S1C_20260101T055510_R110   # moderate, waves 3.9 / 4.7, wind 12.4 / 21.6
+S1C_20260106T060325_R008   # calm, waves 1.2 / 1.4, wind 4.2 / 7.6
+S1A_20260112T060411_R008   # stormy, waves 8.7 / 10.1, wind 24.6 / 27.3
+S1A_20260112T171912_R015   # stormy, waves 6.7 / 8.4, wind 19.8 / 22.7
+S1A_20260124T171911_R015   # calm, waves 1.7 / 2.1, wind 4.6 / 7.5
+S1A_20260205T060409_R008   # calm, waves 2.0 / 2.4, wind 2.8 / 5.1
+S1A_20260217T060408_R008   # moderate, waves 3.8 / 5.0, wind 10.7 / 14.1
+S1C_20260223T060324_R008   # calm, waves 1.9 / 2.2, wind 6.3 / 8.4
+S1C_20260302T055508_R110   # stormy, waves 3.7 / 4.3, wind 17.2 / 18.5
+S1C_20260307T171810_R015   # calm, waves 1.9 / 2.8, wind 6.6 / 9.4
+S1A_20260313T060408_R008   # stormy, waves 4.5 / 5.4, wind 12.3 / 13.5
+S1C_20260314T055508_R110   # moderate, waves 3.2 / 4.1, wind 11.1 / 13.8

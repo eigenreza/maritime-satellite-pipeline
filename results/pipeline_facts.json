@@ -1,0 +1,10 @@
+{
+ "passes": 42,
+ "task_runs": 598,
+ "retries": 2,
+ "recovered": 4,
+ "failed": 1,
+ "raw_gigabytes": 77.5,
+ "stac_items": 269,
+ "qc_checks": 1603
+}

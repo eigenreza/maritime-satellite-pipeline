@@ -1,0 +1,59 @@
+# Full local stack: PostGIS, Prefect server and the pipeline worker (Python + ESA SNAP).
+name: msp
+
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: msp
+      POSTGRES_PASSWORD: msp
+      POSTGRES_DB: msp
+    ports:
+      - "15432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U msp -d msp"]
+      interval: 5s
+      retries: 20
+
+  prefect:
+    image: prefecthq/prefect:3-python3.11
+    command: prefect server start --host 0.0.0.0
+    environment:
+      PREFECT_SERVER_API_HOST: 0.0.0.0
+      PREFECT_UI_API_URL: http://localhost:4200/api
+    ports:
+      - "4200:4200"
+    volumes:
+      - prefectdata:/root/.prefect
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request;urllib.request.urlopen('http://localhost:4200/api/health')\""]
+      interval: 10s
+      retries: 30
+
+  pipeline:
+    build:
+      context: .
+      dockerfile: docker/pipeline.Dockerfile
+    image: msp-pipeline:local
+    depends_on:
+      db:
+        condition: service_healthy
+      prefect:
+        condition: service_healthy
+    environment:
+      MSP_DB_URL: postgresql://msp:msp@db:5432/msp
+      PREFECT_API_URL: http://prefect:4200/api
+      MSP_SNAP_MODE: local
+      CDSE_USERNAME: ${CDSE_USERNAME:-}
+      CDSE_PASSWORD: ${CDSE_PASSWORD:-}
+    volumes:
+      - ./:/work
+    working_dir: /work
+    # Stays up so stages can be run with `docker compose exec pipeline msp ...`
+    command: ["sleep", "infinity"]
+
+volumes:
+  pgdata:
+  prefectdata:

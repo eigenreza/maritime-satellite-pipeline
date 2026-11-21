@@ -1,0 +1,251 @@
+{
+  "type": "Collection",
+  "id": "sentinel-2-cloud",
+  "stac_version": "1.1.0",
+  "description": "Cloud mask from the Sentinel-2 L2A scene classification and a true-color preview per acquisition day, mosaicked over the study area.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Maritime satellite pipeline catalogue"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260805_cloud/S2_20260805_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260806_cloud/S2_20260806_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260808_cloud/S2_20260808_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260810_cloud/S2_20260810_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260811_cloud/S2_20260811_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260812_cloud/S2_20260812_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260813_cloud/S2_20260813_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260815_cloud/S2_20260815_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260816_cloud/S2_20260816_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260818_cloud/S2_20260818_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260820_cloud/S2_20260820_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260821_cloud/S2_20260821_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260822_cloud/S2_20260822_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260823_cloud/S2_20260823_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260825_cloud/S2_20260825_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260826_cloud/S2_20260826_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260828_cloud/S2_20260828_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260830_cloud/S2_20260830_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260831_cloud/S2_20260831_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260901_cloud/S2_20260901_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260902_cloud/S2_20260902_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260904_cloud/S2_20260904_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260905_cloud/S2_20260905_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260907_cloud/S2_20260907_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260909_cloud/S2_20260909_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260910_cloud/S2_20260910_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260911_cloud/S2_20260911_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260912_cloud/S2_20260912_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260914_cloud/S2_20260914_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260915_cloud/S2_20260915_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260917_cloud/S2_20260917_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260919_cloud/S2_20260919_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260920_cloud/S2_20260920_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260921_cloud/S2_20260921_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260922_cloud/S2_20260922_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260924_cloud/S2_20260924_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260925_cloud/S2_20260925_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260927_cloud/S2_20260927_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260929_cloud/S2_20260929_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./S2_20260930_cloud/S2_20260930_cloud.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Maritime satellite pipeline catalogue"
+    }
+  ],
+  "msp:attribution": "Contains modified Copernicus Sentinel data 2025 and 2026",
+  "title": "Sentinel-2 cloud cover over sea",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          4.0,
+          60.0,
+          6.0,
+          61.3
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-12-01T00:00:00Z",
+          "2026-09-30T23:59:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Reza Azad Gholami",
+      "roles": [
+        "processor"
+      ]
+    }
+  ]
+}

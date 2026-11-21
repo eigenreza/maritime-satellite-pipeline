@@ -1,0 +1,51 @@
+{
+  "type": "Catalog",
+  "id": "maritime-satellite-pipeline",
+  "stac_version": "1.1.0",
+  "description": "Derived products of the maritime satellite pipeline: radar backscatter, ship detections, cloud cover, sea surface temperature, wind and waves over the waters off Bergen and Fedje, western Norway.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./catalog.json",
+      "type": "application/json",
+      "title": "Maritime satellite pipeline catalogue"
+    },
+    {
+      "rel": "child",
+      "href": "./metocean/collection.json",
+      "type": "application/json",
+      "title": "Wind and waves"
+    },
+    {
+      "rel": "child",
+      "href": "./reference-layers/collection.json",
+      "type": "application/json",
+      "title": "Reference layers"
+    },
+    {
+      "rel": "child",
+      "href": "./sentinel-1-sigma0/collection.json",
+      "type": "application/json",
+      "title": "Sentinel-1 calibrated radar backscatter"
+    },
+    {
+      "rel": "child",
+      "href": "./sentinel-2-cloud/collection.json",
+      "type": "application/json",
+      "title": "Sentinel-2 cloud cover over sea"
+    },
+    {
+      "rel": "child",
+      "href": "./sentinel-3-sst/collection.json",
+      "type": "application/json",
+      "title": "Sentinel-3 sea surface temperature"
+    },
+    {
+      "rel": "child",
+      "href": "./ship-detections/collection.json",
+      "type": "application/json",
+      "title": "Radar ship detections"
+    }
+  ],
+  "title": "Maritime satellite pipeline catalogue"
+}

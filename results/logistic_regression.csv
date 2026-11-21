@@ -1,0 +1,8 @@
+model,term,odds_ratio,lo,hi,n
+with_season,length (per doubling),3.2853,2.8994,3.7856,1034
+with_season,wind (per 1 m/s),0.9376,0.8948,0.9879,1034
+with_season,wave height (per 1 m),1.0652,0.8874,1.4015,1034
+with_season,winter (season),1.0573,0.7548,1.5051,1034
+without_season,length (per doubling),3.3007,2.9081,3.804,1034
+without_season,wind (per 1 m/s),0.9397,0.8998,0.9918,1034
+without_season,wave height (per 1 m),1.0651,0.8895,1.4144,1034

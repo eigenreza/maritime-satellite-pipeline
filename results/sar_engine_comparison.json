@@ -1,0 +1,11 @@
+{
+ "pass_id": "S1D_20260806T055526_R110",
+ "compare_pixel_m": 100,
+ "sea_pixels": 411193,
+ "median_difference_db": -0.006,
+ "p5_difference_db": -1.6,
+ "p95_difference_db": 1.48,
+ "correlation_db": 0.867,
+ "snap_seconds": 558.9,
+ "python_seconds": 337.6
+}

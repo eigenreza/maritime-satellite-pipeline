@@ -1,0 +1,79 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "land_mask",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          6.0,
+          60.0
+        ],
+        [
+          6.0,
+          61.3
+        ],
+        [
+          4.0,
+          61.3
+        ],
+        [
+          4.0,
+          60.0
+        ],
+        [
+          6.0,
+          60.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    4.0,
+    60.0,
+    6.0,
+    61.3
+  ],
+  "properties": {
+    "msp:buffer_m": 250.0,
+    "msp:static": true,
+    "msp:attribution": "(c) Kartverket, CC BY 4.0",
+    "license": "CC-BY-4.0",
+    "start_datetime": "2025-12-01T00:00:00Z",
+    "end_datetime": "2026-09-30T23:59:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Maritime satellite pipeline catalogue"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Reference layers"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Reference layers"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "../../../data/products/landmask/land.shp",
+      "type": "application/x-shapefile",
+      "title": "land.shp",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "reference-layers"
+}

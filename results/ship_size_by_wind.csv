@@ -1,0 +1,13 @@
+season,wind_cls,n,median_length_m,share_over_60m
+summer,0-5 m/s,337,67.0,0.5223
+summer,5-10 m/s,172,83.0,0.6105
+summer,10-15 m/s,40,90.0,0.775
+summer,over 15 m/s,1,75.0,1.0
+winter,0-5 m/s,180,90.0,0.7722
+winter,5-10 m/s,186,90.0,0.7473
+winter,10-15 m/s,92,93.0,0.8261
+winter,over 15 m/s,26,93.0,0.9615
+both,0-5 m/s,517,82.0,0.6093
+both,5-10 m/s,358,88.0,0.6816
+both,10-15 m/s,132,92.0,0.8106
+both,over 15 m/s,27,93.0,0.963

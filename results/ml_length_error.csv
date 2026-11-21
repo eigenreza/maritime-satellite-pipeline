@@ -1,0 +1,37 @@
+season,model,length_class,n,mae_m,lo,hi,mape,mape_lo,mape_hi
+summer,detector,all,207,37.8044,32.0913,41.0012,0.3933,0.2945,0.453
+summer,detector,0-30 m,26,78.1767,,,4.7236,,
+summer,detector,30-60 m,30,48.0289,,,1.0372,,
+summer,detector,60-100 m,67,28.2454,,,0.321,,
+summer,detector,100-200 m,70,17.0358,,,0.143,,
+summer,detector,over 200 m,14,141.8336,,,0.5999,,
+summer,gradient_boosting,all,207,16.3728,12.2565,23.1129,0.2098,0.1525,0.2498
+summer,gradient_boosting,0-30 m,26,20.1917,,,1.1877,,
+summer,gradient_boosting,30-60 m,30,9.0446,,,0.2017,,
+summer,gradient_boosting,60-100 m,67,12.486,,,0.1495,,
+summer,gradient_boosting,100-200 m,70,19.6857,,,0.157,,
+summer,gradient_boosting,over 200 m,14,128.0331,,,0.5127,,
+summer,cnn,all,207,18.7459,14.7475,20.5369,0.206,0.186,0.2341
+summer,cnn,0-30 m,26,14.5006,,,0.9315,,
+summer,cnn,30-60 m,30,15.8594,,,0.314,,
+summer,cnn,60-100 m,67,16.4527,,,0.2137,,
+summer,cnn,100-200 m,70,18.9801,,,0.1549,,
+summer,cnn,over 200 m,14,41.1187,,,0.1778,,
+winter,detector,all,387,28.2367,25.9332,31.5706,0.3048,0.2609,0.3333
+winter,detector,0-30 m,16,72.0419,,,4.0093,,
+winter,detector,30-60 m,33,40.1096,,,0.8818,,
+winter,detector,60-100 m,168,26.5912,,,0.3133,,
+winter,detector,100-200 m,135,17.9455,,,0.1388,,
+winter,detector,over 200 m,35,135.752,,,0.5507,,
+winter,gradient_boosting,all,387,16.1255,14.3968,18.0293,0.1798,0.1552,0.2041
+winter,gradient_boosting,0-30 m,16,21.7214,,,1.4481,,
+winter,gradient_boosting,30-60 m,33,10.3371,,,0.2163,,
+winter,gradient_boosting,60-100 m,168,12.1468,,,0.1471,,
+winter,gradient_boosting,100-200 m,135,18.5715,,,0.1571,,
+winter,gradient_boosting,over 200 m,35,124.2199,,,0.452,,
+winter,cnn,all,387,17.8481,15.8916,19.7356,0.1799,0.1555,0.2112
+winter,cnn,0-30 m,16,48.0577,,,2.6489,,
+winter,cnn,30-60 m,33,18.1671,,,0.4503,,
+winter,cnn,60-100 m,168,14.8916,,,0.1887,,
+winter,cnn,100-200 m,135,17.5781,,,0.1349,,
+winter,cnn,over 200 m,35,53.0105,,,0.2335,,

@@ -1,0 +1,13 @@
+season,wave_cls,n,median_length_m,share_over_60m
+summer,0-1 m,439,63.0,0.5057
+summer,1-2 m,81,90.0,0.7901
+summer,2-3 m,24,95.5,0.9583
+summer,over 3 m,6,69.5,0.6667
+winter,0-1 m,299,88.0,0.7057
+winter,1-2 m,94,90.0,0.883
+winter,2-3 m,51,100.0,0.902
+winter,over 3 m,40,146.5,0.975
+both,0-1 m,738,77.5,0.5867
+both,1-2 m,175,90.0,0.84
+both,2-3 m,75,96.0,0.92
+both,over 3 m,46,139.0,0.9348

@@ -1,0 +1,118 @@
+{
+ "type": "Feature",
+ "stac_version": "1.1.0",
+ "stac_extensions": [
+  "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+  "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+ ],
+ "id": "S3_SST_20260821",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     6.0,
+     60.0
+    ],
+    [
+     6.0,
+     61.3
+    ],
+    [
+     4.0,
+     61.3
+    ],
+    [
+     4.0,
+     60.0
+    ],
+    [
+     6.0,
+     60.0
+    ]
+   ]
+  ]
+ },
+ "bbox": [
+  4.0,
+  60.0,
+  6.0,
+  61.3
+ ],
+ "properties": {
+  "proj:code": "EPSG:4326",
+  "proj:shape": [
+   130,
+   200
+  ],
+  "proj:transform": [
+   0.01,
+   0.0,
+   4.0,
+   0.0,
+   -0.01,
+   61.3
+  ],
+  "proj:bbox": [
+   4.0,
+   60.0,
+   6.0,
+   61.3
+  ],
+  "constellation": "sentinel-3",
+  "instruments": [
+   "slstr"
+  ],
+  "license": "proprietary",
+  "msp:attribution": "Contains modified Copernicus Sentinel data 2025 and 2026",
+  "msp:valid_share": 0.0,
+  "datetime": "2026-08-21T10:24:03Z"
+ },
+ "links": [
+  {
+   "rel": "root",
+   "href": "../../catalog.json",
+   "type": "application/json",
+   "title": "Maritime satellite pipeline catalogue"
+  },
+  {
+   "rel": "collection",
+   "href": "../collection.json",
+   "type": "application/json",
+   "title": "Sentinel-3 sea surface temperature"
+  },
+  {
+   "rel": "parent",
+   "href": "../collection.json",
+   "type": "application/json",
+   "title": "Sentinel-3 sea surface temperature"
+  }
+ ],
+ "assets": {
+  "data": {
+   "href": "../../../data/products/s3/S3_SST_20260821_celsius.tif",
+   "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+   "title": "S3_SST_20260821_celsius.tif",
+   "raster:bands": [
+    {
+     "nodata": -999.0,
+     "data_type": "float32",
+     "unit": "degC",
+     "name": "sst"
+    }
+   ],
+   "roles": [
+    "visual"
+   ]
+  },
+  "netcdf": {
+   "href": "../../../data/products/s3/S3_SST_20260821.nc",
+   "type": "application/netcdf",
+   "title": "CF NetCDF (Kelvin)",
+   "roles": [
+    "data"
+   ]
+  }
+ },
+ "collection": "sentinel-3-sst"
+}
